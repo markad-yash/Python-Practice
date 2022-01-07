@@ -171,29 +171,66 @@ Output:
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-Problem :Find sum and average of List in Python
+Problem :Find sum of List in Python
 ```python
+
+import random
+
+sum =0
+lst = []
+for i in range(10):
+    j = random.randint(1,10)
+    sum = sum +j
+    lst.append(j)
+print(lst)
+print(sum)
 
 ```
 Output:
 ```
-
+[2, 7, 10, 7, 1, 4, 6, 8, 1, 10]
+56
 ```
-Problem :
+Problem : Creating the random number list
 ```python
+import random
+
+lst = []
+for i in range(10):
+    j = random.randint(1,10)
+    lst.append(j)
+print(lst)
+```
+Output:
+```
+[6, 5, 7, 2, 4, 5, 8, 1, 8, 5]
+```
+Problem : Multiply all element in list
+```python
+
+lst = [6, 5, 7, 2, 4, 5, 8, 1, 8, 5]
+
+mul = 1
+for i in lst:
+    mul = i*mul
+    print(mul)
+
+print(f'Total multiplication of list element is {mul}')
 
 ```
 Output:
 ```
-
-```
-Problem :
-```python
-
-```
-Output:
-```
-
+6
+30
+210
+420
+1680
+8400
+67200
+67200
+537600
+2688000
+Total multiplication of list element is 2688000
 ```
 Problem :
 ```python
