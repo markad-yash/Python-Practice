@@ -232,13 +232,23 @@ Output:
 2688000
 Total multiplication of list element is 2688000
 ```
-Problem :
+Problem : Sum of nested list element in list
 ```python
+lst = [[2,1,3],[4,6,3],[5,3,2]]
 
+ls = []
+
+for i in lst:
+    count =0
+    for j in i:
+        count +=j
+    ls.append(count)
+
+print(ls)
 ```
 Output:
 ```
-
+[6, 13, 10]
 ```
 Problem :
 ```python
